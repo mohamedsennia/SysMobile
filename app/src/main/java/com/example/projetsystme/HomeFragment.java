@@ -18,7 +18,7 @@ import android.widget.Button;
  * create an instance of this fragment.
  */
 public class HomeFragment extends Fragment {
-    private Button buttonH,buttonD;
+    private Button buttonD;
 
     @Nullable
     @Override
@@ -26,14 +26,14 @@ public class HomeFragment extends Fragment {
         View rootView=inflater.inflate(R.layout.fragment_home,container,false);
         buttonD=rootView.findViewById(R.id.Choose);
 
-        buttonH=rootView.findViewById(R.id.Help);
+
         buttonD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FragmentTransaction fr=getChildFragmentManager().beginTransaction();
                 fr.replace(R.id.fragemntcontainer,new Destination());
                 fr.commit();
-                buttonH.setVisibility(View.GONE);
+
                 buttonD.setVisibility(View.GONE);
             }
         });

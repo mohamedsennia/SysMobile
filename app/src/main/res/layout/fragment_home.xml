@@ -5,6 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/usthb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <FrameLayout
         android:id="@+id/fragemntcontainer"
         android:layout_width="match_parent"
@@ -15,24 +25,16 @@
         app:layout_constraintEnd_toEndOf="parent">
 
     </FrameLayout>
+
     <Button
         android:id="@+id/Choose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="80dp"
         android:text="Choose Destination"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
-    <Button
-        android:id="@+id/Help"
-        android:layout_width="201dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="80dp"
-        android:text="Help"
-        app:layout_constraintEnd_toEndOf="@+id/Choose"
-        app:layout_constraintStart_toStartOf="@+id/Choose"
-        app:layout_constraintTop_toBottomOf="@+id/Choose" />
 </androidx.constraintlayout.widget.ConstraintLayout>
